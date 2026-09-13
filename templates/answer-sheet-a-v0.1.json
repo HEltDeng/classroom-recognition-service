@@ -1,0 +1,82 @@
+{
+  "template_version": "A-v0.1",
+  "page_type": "OMR",
+  "canonical_width": 1600,
+  "canonical_height": 2200,
+  "markers": [
+    {"id": "top_left", "x": 95, "y": 95, "width": 50, "height": 50, "search_margin": 32},
+    {"id": "top_right", "x": 1455, "y": 95, "width": 50, "height": 50, "search_margin": 32},
+    {"id": "bottom_left", "x": 95, "y": 2055, "width": 50, "height": 50, "search_margin": 32},
+    {"id": "bottom_right", "x": 1455, "y": 2055, "width": 50, "height": 50, "search_margin": 32}
+  ],
+  "qr_region": {"x": 1330, "y": 100, "width": 180, "height": 180},
+  "question_regions": [
+    {
+      "question_no": 1,
+      "type": "CHOICE",
+      "options": [
+        {"label": "A", "bbox": {"x": 420, "y": 430, "width": 120, "height": 76}},
+        {"label": "B", "bbox": {"x": 620, "y": 430, "width": 120, "height": 76}},
+        {"label": "C", "bbox": {"x": 820, "y": 430, "width": 120, "height": 76}},
+        {"label": "D", "bbox": {"x": 1020, "y": 430, "width": 120, "height": 76}}
+      ]
+    },
+    {
+      "question_no": 2,
+      "type": "CHOICE",
+      "options": [
+        {"label": "A", "bbox": {"x": 420, "y": 550, "width": 120, "height": 76}},
+        {"label": "B", "bbox": {"x": 620, "y": 550, "width": 120, "height": 76}},
+        {"label": "C", "bbox": {"x": 820, "y": 550, "width": 120, "height": 76}},
+        {"label": "D", "bbox": {"x": 1020, "y": 550, "width": 120, "height": 76}}
+      ]
+    },
+    {
+      "question_no": 3,
+      "type": "CHOICE",
+      "options": [
+        {"label": "A", "bbox": {"x": 420, "y": 670, "width": 120, "height": 76}},
+        {"label": "B", "bbox": {"x": 620, "y": 670, "width": 120, "height": 76}},
+        {"label": "C", "bbox": {"x": 820, "y": 670, "width": 120, "height": 76}},
+        {"label": "D", "bbox": {"x": 1020, "y": 670, "width": 120, "height": 76}}
+      ]
+    },
+    {
+      "question_no": 4,
+      "type": "CHOICE",
+      "options": [
+        {"label": "A", "bbox": {"x": 420, "y": 790, "width": 120, "height": 76}},
+        {"label": "B", "bbox": {"x": 620, "y": 790, "width": 120, "height": 76}},
+        {"label": "C", "bbox": {"x": 820, "y": 790, "width": 120, "height": 76}},
+        {"label": "D", "bbox": {"x": 1020, "y": 790, "width": 120, "height": 76}}
+      ]
+    }
+  ],
+  "text_regions": [
+    {"question_no": 5, "type": "TEXT", "bbox": {"x": 300, "y": 1050, "width": 1000, "height": 100}, "ocr_inner_margin_x_ratio": 0.02, "ocr_inner_margin_y_ratio": 0.08},
+    {"question_no": 6, "type": "TEXT", "bbox": {"x": 300, "y": 1220, "width": 1000, "height": 100}, "ocr_inner_margin_x_ratio": 0.02, "ocr_inner_margin_y_ratio": 0.08},
+    {"question_no": 7, "type": "TEXT", "bbox": {"x": 300, "y": 1390, "width": 1000, "height": 100}, "ocr_inner_margin_x_ratio": 0.02, "ocr_inner_margin_y_ratio": 0.08}
+  ],
+  "omr_config": {
+    "inner_margin_ratio": 0.18,
+    "blank_threshold": 0.06,
+    "too_light_threshold": 0.18,
+    "recognize_threshold": 0.28,
+    "multiple_threshold": 0.28,
+    "ambiguous_gap": 0.08,
+    "minimum_gap": 0.1,
+    "threshold_config_version": "omr-threshold-v0.1"
+  },
+  "quality_config": {
+    "min_blur_score": 0.08,
+    "min_contrast": 0.08,
+    "min_brightness": 0.05,
+    "max_brightness": 0.999,
+    "require_markers": true
+  },
+  "metadata": {
+    "layout": "fixed-rectangle-choice-plus-text",
+    "marker_protocol": "four-corner-filled-squares",
+    "created_for": "OMR technical validation only"
+  }
+}

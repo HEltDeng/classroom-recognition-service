@@ -1,0 +1,23 @@
+{
+  "provider": "paddleocr_ppocrv5",
+  "model": "PP-OCRv5_server_rec",
+  "template_version": "A-v0.1",
+  "input": "datasets\\synthetic\\answer-sheet-a-v0.1-misspelling.png",
+  "question_no": 5,
+  "truth": "becuse",
+  "raw_text": "becuse",
+  "status": "RECOGNIZED",
+  "confidence": 0.9998,
+  "exact_match": true,
+  "cer": 0.0,
+  "latency_ms": 4540.84,
+  "available": true,
+  "metadata": {
+    "package_version": "3.7.0",
+    "model": "PP-OCRv5_server_rec"
+  },
+  "resources": {
+    "process_rss_mb": 538.76,
+    "cpu_percent": 59.4
+  }
+}

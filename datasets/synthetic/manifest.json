@@ -1,0 +1,54 @@
+[
+  {
+    "file": "answer-sheet-a-v0.1-recognized.png",
+    "ground_truth": {
+      "1": "B",
+      "2": "C",
+      "3": "A",
+      "4": "D"
+    },
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-blank.png",
+    "ground_truth": {},
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-multiple.png",
+    "ground_truth": {
+      "1": "MULTIPLE"
+    },
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-too-light.png",
+    "ground_truth": {
+      "1": "TOO_LIGHT"
+    },
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-ambiguous.png",
+    "ground_truth": {
+      "1": "AMBIGUOUS"
+    },
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-ocr-synthetic.png",
+    "ground_truth": {
+      "5": "because",
+      "6": "environment",
+      "7": "went"
+    },
+    "pii": false
+  },
+  {
+    "file": "answer-sheet-a-v0.1-misspelling.png",
+    "ground_truth": {
+      "5": "becuse"
+    },
+    "pii": false
+  }
+]

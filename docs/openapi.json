@@ -1,0 +1,508 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Classroom Recognition Service",
+    "description": "Fixed-template page preprocessing, rectangle OMR, and replaceable OCR. This service does not score answers or manage classroom data.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Health Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/templates": {
+      "get": {
+        "summary": "Templates",
+        "operationId": "templates_templates_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "type": "object",
+                  "title": "Response Templates Templates Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/recognize/page": {
+      "post": {
+        "summary": "Recognize Page",
+        "operationId": "recognize_page_recognize_page_post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_recognize_page_recognize_page_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecognitionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_recognize_page_recognize_page_post": {
+        "properties": {
+          "image": {
+            "type": "string",
+            "contentMediaType": "application/octet-stream",
+            "title": "Image",
+            "description": "One answer-sheet image"
+          },
+          "template_version": {
+            "type": "string",
+            "title": "Template Version",
+            "default": "A-v0.1"
+          },
+          "page_type": {
+            "type": "string",
+            "title": "Page Type",
+            "default": "OMR"
+          },
+          "page_token": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Token"
+          }
+        },
+        "type": "object",
+        "required": [
+          "image"
+        ],
+        "title": "Body_recognize_page_recognize_page_post"
+      },
+      "ChoiceAnswer": {
+        "properties": {
+          "question_no": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Question No"
+          },
+          "type": {
+            "type": "string",
+            "const": "CHOICE",
+            "title": "Type",
+            "default": "CHOICE"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          },
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence"
+          },
+          "status": {
+            "$ref": "#/components/schemas/RecognitionStatus"
+          },
+          "fill_ratios": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Fill Ratios"
+          },
+          "engine": {
+            "type": "string",
+            "title": "Engine",
+            "default": "opencv_omr"
+          },
+          "threshold_config_version": {
+            "type": "string",
+            "title": "Threshold Config Version"
+          },
+          "top_score": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Top Score"
+          },
+          "second_score": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Second Score"
+          },
+          "top_gap": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Top Gap"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question_no",
+          "confidence",
+          "status",
+          "fill_ratios",
+          "threshold_config_version",
+          "top_score",
+          "second_score",
+          "top_gap"
+        ],
+        "title": "ChoiceAnswer"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "PageQuality": {
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/PageQualityStatus"
+          },
+          "blur_score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Blur Score"
+          },
+          "brightness": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Brightness"
+          },
+          "contrast": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contrast"
+          },
+          "perspective_quality": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Perspective Quality"
+          },
+          "page_complete": {
+            "type": "boolean",
+            "title": "Page Complete",
+            "default": false
+          },
+          "marker_score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Score"
+          },
+          "details": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Details"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "PageQuality"
+      },
+      "PageQualityStatus": {
+        "type": "string",
+        "enum": [
+          "OK",
+          "IMAGE_RETAKE_REQUIRED",
+          "PAGE_NOT_FOUND",
+          "MARKERS_NOT_FOUND"
+        ],
+        "title": "PageQualityStatus"
+      },
+      "RecognitionResponse": {
+        "properties": {
+          "request_id": {
+            "type": "string",
+            "title": "Request Id"
+          },
+          "template_version": {
+            "type": "string",
+            "title": "Template Version"
+          },
+          "page_type": {
+            "type": "string",
+            "const": "OMR",
+            "title": "Page Type",
+            "default": "OMR"
+          },
+          "page_quality": {
+            "$ref": "#/components/schemas/PageQuality"
+          },
+          "answers": {
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/ChoiceAnswer"
+                },
+                {
+                  "$ref": "#/components/schemas/TextAnswer"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "type",
+                "mapping": {
+                  "CHOICE": "#/components/schemas/ChoiceAnswer",
+                  "TEXT": "#/components/schemas/TextAnswer"
+                }
+              }
+            },
+            "type": "array",
+            "title": "Answers"
+          },
+          "review_required": {
+            "type": "boolean",
+            "title": "Review Required",
+            "default": false
+          },
+          "engine_versions": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Engine Versions"
+          },
+          "errors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Errors"
+          }
+        },
+        "type": "object",
+        "required": [
+          "request_id",
+          "template_version",
+          "page_quality"
+        ],
+        "title": "RecognitionResponse"
+      },
+      "RecognitionStatus": {
+        "type": "string",
+        "enum": [
+          "RECOGNIZED",
+          "BLANK",
+          "MULTIPLE",
+          "AMBIGUOUS",
+          "TOO_LIGHT",
+          "LOW_IMAGE_QUALITY",
+          "REVIEW_REQUIRED"
+        ],
+        "title": "RecognitionStatus"
+      },
+      "TextAnswer": {
+        "properties": {
+          "question_no": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Question No"
+          },
+          "type": {
+            "type": "string",
+            "const": "TEXT",
+            "title": "Type",
+            "default": "TEXT"
+          },
+          "raw_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Raw Text"
+          },
+          "normalized_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Normalized Text"
+          },
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence"
+          },
+          "engine": {
+            "type": "string",
+            "title": "Engine"
+          },
+          "status": {
+            "$ref": "#/components/schemas/RecognitionStatus"
+          },
+          "provider_metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Provider Metadata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question_no",
+          "confidence",
+          "engine",
+          "status"
+        ],
+        "title": "TextAnswer"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

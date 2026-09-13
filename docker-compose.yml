@@ -1,0 +1,12 @@
+services:
+  recognition-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8092:8092"
+    environment:
+      RECOGNITION_TEMPLATE_VERSION: A-v0.1
+      PADDLEOCR_MODEL_NAME: PP-OCRv5_mobile_rec
+      PADDLEOCR_DEVICE: cpu
+    restart: unless-stopped

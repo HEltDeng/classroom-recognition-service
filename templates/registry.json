@@ -1,0 +1,11 @@
+{
+  "default_template_version": "A-v0.1",
+  "templates": [
+    {
+      "template_version": "A-v0.1",
+      "file": "answer-sheet-a-v0.1.json",
+      "page_type": "OMR",
+      "status": "TEST_ONLY"
+    }
+  ]
+}

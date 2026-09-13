@@ -1,0 +1,4 @@
+# Optional primary OCR provider. Keep separate from the CPU OMR/API install so
+# a machine without Paddle can still run OMR and return explicit OCR review states.
+paddleocr>=3,<4
+paddlepaddle>=3,<4

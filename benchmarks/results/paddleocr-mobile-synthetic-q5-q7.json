@@ -1,0 +1,84 @@
+{
+  "provider": "paddleocr_ppocrv5",
+  "model": "PP-OCRv5_mobile_rec",
+  "template_version": "A-v0.1",
+  "input": "datasets\\synthetic\\answer-sheet-a-v0.1-ocr-synthetic.png",
+  "samples": [
+    {
+      "provider": "paddleocr_ppocrv5",
+      "model": "PP-OCRv5_mobile_rec",
+      "template_version": "A-v0.1",
+      "input": "datasets\\synthetic\\answer-sheet-a-v0.1-ocr-synthetic.png",
+      "question_no": 5,
+      "truth": "because",
+      "raw_text": "because",
+      "status": "RECOGNIZED",
+      "confidence": 0.9997,
+      "exact_match": true,
+      "cer": 0.0,
+      "latency_ms": 7713.51,
+      "available": true,
+      "metadata": {
+        "package_version": "3.7.0",
+        "model": "PP-OCRv5_mobile_rec"
+      },
+      "resources": {
+        "process_rss_mb": 413.18,
+        "cpu_percent": 10.1
+      }
+    },
+    {
+      "provider": "paddleocr_ppocrv5",
+      "model": "PP-OCRv5_mobile_rec",
+      "template_version": "A-v0.1",
+      "input": "datasets\\synthetic\\answer-sheet-a-v0.1-ocr-synthetic.png",
+      "question_no": 6,
+      "truth": "environment",
+      "raw_text": "environment",
+      "status": "RECOGNIZED",
+      "confidence": 0.9998,
+      "exact_match": true,
+      "cer": 0.0,
+      "latency_ms": 23.24,
+      "available": true,
+      "metadata": {
+        "package_version": "3.7.0",
+        "model": "PP-OCRv5_mobile_rec"
+      },
+      "resources": {
+        "process_rss_mb": 416.32,
+        "cpu_percent": 98.5
+      }
+    },
+    {
+      "provider": "paddleocr_ppocrv5",
+      "model": "PP-OCRv5_mobile_rec",
+      "template_version": "A-v0.1",
+      "input": "datasets\\synthetic\\answer-sheet-a-v0.1-ocr-synthetic.png",
+      "question_no": 7,
+      "truth": "went",
+      "raw_text": "went",
+      "status": "RECOGNIZED",
+      "confidence": 0.9999,
+      "exact_match": true,
+      "cer": 0.0,
+      "latency_ms": 20.87,
+      "available": true,
+      "metadata": {
+        "package_version": "3.7.0",
+        "model": "PP-OCRv5_mobile_rec"
+      },
+      "resources": {
+        "process_rss_mb": 416.38,
+        "cpu_percent": 100.0
+      }
+    }
+  ],
+  "summary": {
+    "count": 3,
+    "exact_match_count": 3,
+    "exact_match_rate": 1.0,
+    "mean_cer": 0.0,
+    "mean_latency_ms": 2585.87
+  }
+}

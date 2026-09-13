@@ -1,0 +1,5 @@
+# Optional benchmark candidates. TrOCR and DeepSeek-OCR2 are never default providers.
+psutil>=5.9,<8
+pillow>=10,<12
+torch>=2.6,<3
+transformers>=4.51,<5
