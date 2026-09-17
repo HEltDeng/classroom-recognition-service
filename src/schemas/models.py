@@ -87,7 +87,7 @@ class RecognitionResponse(BaseModel):
 
     request_id: str
     template_version: str
-    page_type: Literal["OMR"] = "OMR"
+    page_type: Literal["OMR", "OCR"] = "OMR"
     page_quality: PageQuality
     answers: list[Answer] = Field(default_factory=list)
     review_required: bool = False

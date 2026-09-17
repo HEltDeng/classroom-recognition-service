@@ -6,6 +6,14 @@
       "file": "answer-sheet-a-v0.1.json",
       "page_type": "OMR",
       "status": "TEST_ONLY"
+    },
+    {
+      "template_version": "A5-OMR-v1",
+      "file": "A5-OMR-v1.json"
+    },
+    {
+      "template_version": "A5-OCR-v1",
+      "file": "A5-OCR-v1.json"
     }
   ]
 }

@@ -27,7 +27,7 @@ class OMRRecognitionEngine:
     key, so scoring remains outside this service.
     """
 
-    engine_version = "opencv-omr-v0.1"
+    engine_version = "opencv-omr-v0.2"
 
     def _measure_region(self, gray: np.ndarray, rect: Rect, inner_margin_ratio: float) -> float:
         x, y, width, height = rect.as_xywh()
@@ -41,7 +41,12 @@ class OMRRecognitionEngine:
         if crop.size == 0:
             return 0.0
         crop = cv2.GaussianBlur(crop, (3, 3), 0)
-        background = float(np.percentile(crop, 90))
+        # Estimate paper brightness outside the fill area: a completely filled
+        # box has no white pixels of its own and must not become its own white.
+        pad = max(4, height // 2)
+        surrounding = gray[max(0, y-pad):min(gray.shape[0], y+height+pad),
+                           max(0, x-pad):min(gray.shape[1], x+width+pad)]
+        background = float(np.percentile(surrounding, 90))
         denominator = max(background - 20.0, 32.0)
         darkness = np.clip((background - crop.astype(np.float32)) / denominator, 0.0, 1.0)
         # Mean darkness is more useful than a single global threshold for

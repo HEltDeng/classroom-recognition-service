@@ -168,6 +168,7 @@ class RecognitionService:
             return RecognitionResponse(
                 request_id=request_id,
                 template_version=template.template_version,
+                page_type=page_type,
                 page_quality=page_quality,
                 answers=[],
                 review_required=True,
@@ -190,6 +191,7 @@ class RecognitionService:
         return RecognitionResponse(
             request_id=request_id,
             template_version=template.template_version,
+                page_type=page_type,
             page_quality=page_quality,
             answers=answers,
             review_required=review_required,

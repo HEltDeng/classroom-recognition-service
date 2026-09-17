@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.metadata
 import json
+import os
 from typing import Any
 
 import cv2
@@ -51,6 +52,7 @@ class PaddleOcrProvider(TextRecognitionProvider):
                     self._client = recognition_cls(
                         model_name=self.model_version,
                         device=self.device,
+                        cpu_threads=int(os.getenv("OCR_CPU_THREADS", "2")),
                     )
                 except TypeError:
                     self._client = recognition_cls(model_name=self.model_version)

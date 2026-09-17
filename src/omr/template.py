@@ -68,7 +68,7 @@ class QualityConfig(BaseModel):
 
 class AnswerSheetTemplate(BaseModel):
     template_version: str
-    page_type: Literal["OMR"] = "OMR"
+    page_type: Literal["OMR", "OCR"] = "OMR"
     canonical_width: int = Field(gt=0)
     canonical_height: int = Field(gt=0)
     markers: list[MarkerSpec] = Field(min_length=4)

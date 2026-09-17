@@ -1,0 +1,190 @@
+{
+  "template_version": "A5-OCR-v1",
+  "page_type": "OCR",
+  "canonical_width": 1480,
+  "canonical_height": 2100,
+  "markers": [
+    {
+      "id": "top_left",
+      "x": 65,
+      "y": 65,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "top_right",
+      "x": 1375,
+      "y": 65,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "bottom_left",
+      "x": 65,
+      "y": 1995,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "bottom_right",
+      "x": 1375,
+      "y": 1995,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    }
+  ],
+  "qr_region": {
+    "x": 1080,
+    "y": 135,
+    "width": 280,
+    "height": 280
+  },
+  "question_regions": [],
+  "text_regions": [
+    {
+      "question_no": 1,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 530,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 2,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 668,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 3,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 806,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 4,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 944,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 5,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1082,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 6,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1220,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 7,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1358,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 8,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1496,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 9,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1634,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    },
+    {
+      "question_no": 10,
+      "type": "TEXT",
+      "bbox": {
+        "x": 130,
+        "y": 1772,
+        "width": 1220,
+        "height": 90
+      },
+      "ocr_inner_margin_x_ratio": 0.01,
+      "ocr_inner_margin_y_ratio": 0.08
+    }
+  ],
+  "omr_config": {
+    "inner_margin_ratio": 0.18,
+    "blank_threshold": 0.06,
+    "too_light_threshold": 0.18,
+    "recognize_threshold": 0.28,
+    "multiple_threshold": 0.28,
+    "ambiguous_gap": 0.08,
+    "minimum_gap": 0.1,
+    "threshold_config_version": "omr-threshold-v0.1"
+  },
+  "quality_config": {
+    "min_blur_score": 0.08,
+    "min_contrast": 0.08,
+    "min_brightness": 0.05,
+    "max_brightness": 0.999,
+    "require_markers": true
+  },
+  "metadata": {
+    "layout": "A5-148x210mm-fixed-v1",
+    "numbering": "ordinal within question type, page offset applied by backend"
+  }
+}

@@ -1,0 +1,1750 @@
+{
+  "template_version": "A5-OMR-v1",
+  "page_type": "OMR",
+  "canonical_width": 1480,
+  "canonical_height": 2100,
+  "markers": [
+    {
+      "id": "top_left",
+      "x": 65,
+      "y": 65,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "top_right",
+      "x": 1375,
+      "y": 65,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "bottom_left",
+      "x": 65,
+      "y": 1995,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    },
+    {
+      "id": "bottom_right",
+      "x": 1375,
+      "y": 1995,
+      "width": 40,
+      "height": 40,
+      "search_margin": 36
+    }
+  ],
+  "qr_region": {
+    "x": 1080,
+    "y": 135,
+    "width": 280,
+    "height": 280
+  },
+  "question_regions": [
+    {
+      "question_no": 1,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 2,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 3,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 4,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 5,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 6,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 7,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 8,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 9,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 10,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 11,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 12,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 13,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 14,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 15,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 16,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 17,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 18,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 19,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 20,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 220,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 328,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 436,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 544,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 21,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 525,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 22,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 592,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 23,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 659,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 24,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 726,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 25,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 793,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 26,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 860,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 27,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 927,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 28,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 994,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 29,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1061,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 30,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1128,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 31,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1195,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 32,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1262,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 33,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1329,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 34,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1396,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 35,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1463,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 36,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1530,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 37,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1597,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 38,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1664,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 39,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1731,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    },
+    {
+      "question_no": 40,
+      "type": "CHOICE",
+      "options": [
+        {
+          "label": "A",
+          "bbox": {
+            "x": 850,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "B",
+          "bbox": {
+            "x": 958,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "C",
+          "bbox": {
+            "x": 1066,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        },
+        {
+          "label": "D",
+          "bbox": {
+            "x": 1174,
+            "y": 1798,
+            "width": 54,
+            "height": 34
+          }
+        }
+      ]
+    }
+  ],
+  "text_regions": [],
+  "omr_config": {
+    "inner_margin_ratio": 0.18,
+    "blank_threshold": 0.06,
+    "too_light_threshold": 0.18,
+    "recognize_threshold": 0.28,
+    "multiple_threshold": 0.28,
+    "ambiguous_gap": 0.08,
+    "minimum_gap": 0.1,
+    "threshold_config_version": "omr-threshold-v0.1"
+  },
+  "quality_config": {
+    "min_blur_score": 0.08,
+    "min_contrast": 0.08,
+    "min_brightness": 0.05,
+    "max_brightness": 0.999,
+    "require_markers": true
+  },
+  "metadata": {
+    "layout": "A5-148x210mm-fixed-v1",
+    "numbering": "ordinal within question type, page offset applied by backend"
+  }
+}

@@ -39,7 +39,7 @@ def test_perspective_sheet_returns_explainable_nominal_omr():
     assert all(answer.status == RecognitionStatus.RECOGNIZED for answer in choices)
     assert all(set(answer.fill_ratios) == {"A", "B", "C", "D"} for answer in choices)
     assert all(0 <= answer.confidence <= 1 for answer in choices)
-    assert response.engine_versions["omr_engine"] == "opencv-omr-v0.1"
+    assert response.engine_versions["omr_engine"] == "opencv-omr-v0.2"
     assert response.review_required is True  # OCR is deliberately unavailable in the base install.
 
 
@@ -79,3 +79,13 @@ def test_unusable_input_does_not_produce_answers():
     assert response.page_quality.status == "PAGE_NOT_FOUND"
     assert response.answers == []
     assert response.review_required is True
+
+
+def test_solid_black_mark_uses_surrounding_paper_as_reference():
+    import cv2
+
+    from src.omr.engine import OMRRecognitionEngine
+    from src.omr.template import Rect
+    image = np.full((100, 140), 255, dtype=np.uint8)
+    cv2.rectangle(image, (35, 35), (90, 70), 0, -1)
+    assert OMRRecognitionEngine()._measure_region(image, Rect(x=35,y=35,width=55,height=35), .18) > .95
